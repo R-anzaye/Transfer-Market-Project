@@ -39,7 +39,7 @@ function renderPlayer(player) {
 }
 
 function getAllPlayers() {
-    fetch(`https://transfer-market-project-10.onrender.com/playerData`)
+    fetch(`https://localhost:3000/playerData`)
         .then(res => res.json())
         .then(playerData => playerData.forEach(player => renderPlayer(player)))
         .catch(error => console.error('Error fetching players:', error))
@@ -60,7 +60,7 @@ function handleSubmit(e) {
 }
 
 function sellPlayer(playerObj) {
-    fetch(`https://transfer-market-project-10.onrender.com/playerData`, {
+    fetch(`https://localhost:3000/playerData`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -75,7 +75,7 @@ function sellPlayer(playerObj) {
 }
 
 function deletePlayer(id) {
-    fetch(`https://transfer-market-project-10.onrender.com/playerData/${id}`, {
+    fetch(`https://localhost:3000/playerData/${id}`, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json'
@@ -97,7 +97,7 @@ function handleUpdate(event, playerId) {
     };
 
     // Send a PATCH request to update the player data
-    fetch(`https://transfer-market-project-10.onrender.com/playerData/${playerId}`, {
+    fetch(`https://localhost:3000/playerData/${playerId}`, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json'
