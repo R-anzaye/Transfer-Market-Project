@@ -1,6 +1,19 @@
 {
   "dependencies": {
-    "express": "^4.19.2"
-    
-  }
+    "express": "^4.19.2",
+    "yarn": "^1.22.22"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "transfer-market-project",
+  "description": "Trans Mart is a web application designed to revolutionize the transfer market experience. It combines the power of modern web technologies to provide a seamless platform for buying and selling players. This README will guide you through the languages and technologies used in Trans Mart, how to use it effectively, and the importance of `package.json`, `package-lock.json`, and `db.json` in the project.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
